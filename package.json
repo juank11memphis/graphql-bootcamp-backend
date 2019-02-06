@@ -1,0 +1,73 @@
+{
+  "name": "graphql-bootcamp-backend",
+  "version": "1.0.0",
+  "description": "GraphQL Bootcamp BackEnd",
+  "main": "index.js",
+  "author": "Juan Morales <juank.memphis@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/juank11memphis/graphql-bootcamp-backend"
+  },
+  "bugs": {
+    "url": "https://github.com/juank11memphis/graphql-bootcamp-backend"
+  },
+  "homepage": "https://github.com/juank11memphis/graphql-bootcamp-backend",
+  "scripts": {
+    "prestart": "npm run format",
+    "start": "cross-env NODE_ENV=local npm-run-all --parallel server lint:watch",
+    "test": "",
+    "lint": "eslint app",
+    "lint:watch": "esw -w --quiet app",
+    "format": "prettier --write '{app,tests}/**/*.js'",
+    "server": "nodemon"
+  },
+  "dependencies": {
+    "@babel/core": "7.2.2",
+    "@babel/runtime": "7.3.1",
+    "apollo-server-express": "2.3.3",
+    "babel-plugin-istanbul": "5.1.0",
+    "body-parser": "1.18.3",
+    "dataloader": "1.4.0",
+    "express": "4.16.4",
+    "graphql": "14.1.1",
+    "graphql-tools": "4.0.4",
+    "lodash": "4.17.11",
+    "mongoose": "5.4.10",
+    "request": "2.88.0",
+    "uuid": "3.3.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.2.3",
+    "@babel/plugin-proposal-class-properties": "7.3.0",
+    "@babel/plugin-proposal-decorators": "7.3.0",
+    "@babel/plugin-proposal-do-expressions": "7.2.0",
+    "@babel/plugin-proposal-export-default-from": "7.2.0",
+    "@babel/plugin-proposal-export-namespace-from": "7.2.0",
+    "@babel/plugin-proposal-function-bind": "7.2.0",
+    "@babel/plugin-proposal-function-sent": "7.2.0",
+    "@babel/plugin-proposal-json-strings": "7.2.0",
+    "@babel/plugin-proposal-logical-assignment-operators": "7.2.0",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "7.2.0",
+    "@babel/plugin-proposal-numeric-separator": "7.2.0",
+    "@babel/plugin-proposal-optional-chaining": "7.2.0",
+    "@babel/plugin-proposal-pipeline-operator": "7.3.2",
+    "@babel/plugin-proposal-throw-expressions": "7.2.0",
+    "@babel/plugin-syntax-dynamic-import": "7.2.0",
+    "@babel/plugin-syntax-import-meta": "7.2.0",
+    "@babel/plugin-transform-runtime": "7.2.0",
+    "@babel/preset-env": "7.3.1",
+    "@babel/register": "7.0.0",
+    "apollo-server": "2.3.3",
+    "babel-eslint": "10.0.1",
+    "cross-env": "5.2.0",
+    "eslint": "5.13.0",
+    "eslint-config-google": "0.12.0",
+    "eslint-config-prettier": "4.0.0",
+    "eslint-plugin-babel": "5.3.0",
+    "eslint-watch": "4.0.2",
+    "nodemon": "1.18.9",
+    "npm-run-all": "4.1.5",
+    "prettier": "1.16.4"
+  }
+}

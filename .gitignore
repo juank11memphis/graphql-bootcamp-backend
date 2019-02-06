@@ -1,0 +1,6 @@
+**/.DS_STORE
+npm-debug.log
+dist
+node_modules
+*.log
+.yarn-cache.tgz
