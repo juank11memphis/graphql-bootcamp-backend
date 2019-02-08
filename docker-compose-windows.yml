@@ -1,0 +1,44 @@
+version: '3.7'
+networks:
+  graphqlbootcamp:
+    external:
+      name: graphqlbootcamp
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: build/windows/Dockerfile
+    container_name: backend
+    command: ['yarn', 'start']
+    ports:
+      - 3001:3001
+    expose:
+      - '3001'
+    volumes:
+      - ./app:/dist/app
+    depends_on:
+      - mongo-seed
+    networks:
+      - graphqlbootcamp
+
+  mongo-seed:
+    build:
+      context: ./build
+      dockerfile: mongo-seed/Dockerfile
+    container_name: mongo-seed
+    command: ['./wait-for-it.sh', 'mongodb:27017', '--', './mongo-seed.sh']
+    depends_on:
+      - mongodb
+    networks:
+      - graphqlbootcamp
+
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    ports:
+      - 27017:27017
+    expose:
+      - '27017'
+    command: mongod
+    networks:
+      - graphqlbootcamp
