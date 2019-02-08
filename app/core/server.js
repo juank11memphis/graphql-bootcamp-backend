@@ -1,4 +1,7 @@
 import app from './app'
+import graphServer from '../graphql/graphql.server'
+
+graphServer.applyMiddleware({ app })
 
 const port = 3001
 const environment = process.env.NODE_ENV
