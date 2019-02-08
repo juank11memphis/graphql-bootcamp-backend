@@ -1,0 +1,194 @@
+[
+  {
+    "genres": ["Thriller", "Mystery", "Drama"],
+    "title": "Glass",
+    "originalTitle": "Glass",
+    "posterPath": "/svIDTNUoajS8dLEo7EosxvyAsgJ.jpg",
+    "overview": "In a series of escalating encounters, security guard David Dunn uses his supernatural abilities to track Kevin Wendell Crumb, a disturbed man who has twenty-four personalities. Meanwhile, the shadowy presence of Elijah Price emerges as an orchestrator who holds secrets critical to both men.",
+    "releaseDate": "2019-01-18",
+    "year": "2019",
+    "cast": [
+      { "$oid": "580100f4da893943d393e909" },
+      { "$oid": "580100f4da893943d393e910" }
+    ]
+  },
+  {
+    "genres": ["Horror", "Thriller", "Action"],
+    "tmdbId": "522681",
+    "title": "Escape Room",
+    "originalTitle": "Escape Room",
+    "posterPath": "/8yZAx7tlKRZIg7pJfaPhl00yHIQ.jpg",
+    "overview": "Six strangers find themselves in circumstances beyond their control, and must use their wits to survive.",
+    "releaseDate": "2019-01-04",
+    "year": "2019",
+    "cast": [{ "$oid": "580100f4da893943d393e911" }]
+  },
+  {
+    "genres": ["Action", "Fantasy", "Science Fiction", "Adventure"],
+    "tmdbId": "297802",
+    "title": "Aquaman",
+    "originalTitle": "Aquaman",
+    "posterPath": "/5Kg76ldv7VxeX9YlcQXiowHgdX6.jpg",
+    "overview": "Once home to the most advanced civilization on Earth, the city of Atlantis is now an underwater kingdom ruled by the power-hungry King Orm. With a vast army at his disposal, Orm plans to conquer the remaining oceanic people -- and then the surface world. Standing in his way is Aquaman, Orm's half-human, half-Atlantean brother and true heir to the throne. With help from royal counselor Vulko, Aquaman must retrieve the legendary Trident of Atlan and embrace his destiny as protector of the deep.",
+    "releaseDate": "2018-12-21",
+    "year": "2018",
+    "cast": [
+      { "$oid": "580100f4da893943d393e912" },
+      { "$oid": "580100f4da893943d393e913" },
+      { "$oid": "580100f4da893943d393e914" }
+    ]
+  },
+  {
+    "genres": ["Thriller", "Drama"],
+    "tmdbId": "452832",
+    "title": "Serenity",
+    "originalTitle": "Serenity",
+    "posterPath": "/hgWAcic93phg4DOuQ8NrsgQWiqu.jpg",
+    "overview": "Baker Dill is a fishing boat captain leading tours off a tranquil, tropical enclave called Plymouth Island. His quiet life is shattered, however, when his ex-wife Karen tracks him down with a desperate plea for help.",
+    "releaseDate": "2019-01-25",
+    "year": "2019",
+    "cast": [
+      { "$oid": "580100f4da893943d393e915" },
+      { "$oid": "580100f4da893943d393e916" }
+    ]
+  },
+  {
+    "genres": ["Action", "Adventure", "Science Fiction"],
+    "tmdbId": "424783",
+    "title": "Bumblebee",
+    "originalTitle": "Bumblebee",
+    "posterPath": "/fw02ONlDhrYjTSZV8XO6hhU3ds3.jpg",
+    "overview": "On the run in the year 1987, Bumblebee finds refuge in a junkyard in a small Californian beach town. Charlie, on the cusp of turning 18 and trying to find her place in the world, discovers Bumblebee, battle-scarred and broken.  When Charlie revives him, she quickly learns this is no ordinary yellow VW bug.",
+    "releaseDate": "2018-12-21",
+    "year": "2018",
+    "cast": [
+      { "$oid": "580100f4da893943d393e917" },
+      { "$oid": "580100f4da893943d393e918" }
+    ]
+  },
+  {
+    "genres": ["Thriller", "Mystery", "Horror", "Comedy"],
+    "tmdbId": "463684",
+    "title": "Velvet Buzzsaw",
+    "originalTitle": "Velvet Buzzsaw",
+    "posterPath": "/3rViQPcrWthMNecp5XnkKev6BzW.jpg",
+    "overview": "Big money artists and mega-collectors pay a high price when art collides with commerce. After a series of paintings by an unknown artist are discovered, a supernatural force enacts revenge on those who have allowed their greed to get in the way of art.",
+    "releaseDate": "2019-02-01",
+    "year": "2019",
+    "cast": [
+      { "$oid": "580100f4da893943d393e919" },
+      { "$oid": "580100f4da893943d393e920" },
+      { "$oid": "580100f4da893943d393e921" }
+    ]
+  },
+  {
+    "genres": ["Action", "Adventure", "Fantasy", "Family"],
+    "tmdbId": "454294",
+    "title": "The Kid Who Would Be King",
+    "originalTitle": "The Kid Who Would Be King",
+    "posterPath": "/aWENxGrJmXmHvifG6x2aYnpovXI.jpg",
+    "overview": "Alex thinks he’s just another nobody, until he stumbles upon the mythical Sword in the Stone, Excalibur. Now, he must unite his friends and enemies into a band of knights and, together with the legendary wizard Merlin, take on the wicked enchantress Morgana. With the future at stake, Alex must become the great leader he never dreamed he could be.",
+    "releaseDate": "2019-01-25",
+    "year": "2019",
+    "cast": [
+      { "$oid": "580100f4da893943d393e922" },
+      { "$oid": "580100f4da893943d393e923" }
+    ]
+  },
+  {
+    "genres": ["Fantasy", "Family", "Comedy"],
+    "tmdbId": "400650",
+    "title": "Mary Poppins Returns",
+    "originalTitle": "Mary Poppins Returns",
+    "posterPath": "/uTVGku4LibMGyKgQvjBtv3OYfAX.jpg",
+    "overview": "In Depression-era London, a now-grown Jane and Michael Banks, along with Michael's three children, are visited by the enigmatic Mary Poppins following a personal loss. Through her unique magical skills, and with the aid of her friend Jack, she helps the family rediscover the joy and wonder missing in their lives.",
+    "releaseDate": "2018-12-19",
+    "year": "2018",
+    "cast": [{ "$oid": "580100f4da893943d393e924" }]
+  },
+  {
+    "genres": ["Mystery", "Thriller"],
+    "tmdbId": "77",
+    "title": "Memento",
+    "originalTitle": "Memento",
+    "posterPath": "/fQMSaP88cf1nz4qwuNEEFtazuDM.jpg",
+    "overview": "Leonard Shelby is tracking down the man who raped and murdered his wife. The difficulty of locating his wife's killer, however, is compounded by the fact that he suffers from a rare, untreatable form of short-term memory loss. Although he can recall details of life before his accident, Leonard cannot remember what happened fifteen minutes ago, where he's going, or why.",
+    "releaseDate": "2000-10-11",
+    "year": "2000",
+    "cast": [
+      { "$oid": "580100f4da893943d393e925" },
+      { "$oid": "580100f4da893943d393e926" }
+    ]
+  },
+  {
+    "genres": ["Drama"],
+    "tmdbId": "550",
+    "title": "Fight Club",
+    "originalTitle": "Fight Club",
+    "posterPath": "/adw6Lq9FiC9zjYEpOqfq03ituwp.jpg",
+    "overview": "A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground \"fight clubs\" forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion.",
+    "releaseDate": "1999-10-15",
+    "year": "1999",
+    "cast": [
+      { "$oid": "580100f4da893943d393e927" },
+      { "$oid": "580100f4da893943d393e928" }
+    ]
+  },
+  {
+    "genres": ["Thriller", "Crime"],
+    "tmdbId": "107",
+    "title": "Snatch",
+    "originalTitle": "Snatch",
+    "posterPath": "/on9JlbGEccLsYkjeEph2Whm1DIp.jpg",
+    "overview": "The second film from British director Guy Ritchie. Snatch tells an obscure story similar to his first fast-paced crazy character-colliding filled film “Lock, Stock and Two Smoking Barrels.” There are two overlapping stories here – one is the search for a stolen diamond, and the other about a boxing promoter who’s having trouble with a psychotic gangster.",
+    "releaseDate": "2000-09-01",
+    "year": "2000",
+    "cast": [
+      { "$oid": "580100f4da893943d393e927" },
+      { "$oid": "580100f4da893943d393e929" }
+    ]
+  },
+  {
+    "genres": ["Drama", "Crime"],
+    "tmdbId": "238",
+    "title": "The Godfather",
+    "originalTitle": "The Godfather",
+    "posterPath": "/d4KNaTrltq6bpkFS01pYtyXa09m.jpg",
+    "overview": "Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family. When organized crime family patriarch, Vito Corleone barely survives an attempt on his life, his youngest son, Michael steps in to take care of the would-be killers, launching a campaign of bloody revenge.",
+    "releaseDate": "1972-03-14",
+    "year": "1972",
+    "cast": [
+      { "$oid": "580100f4da893943d393e930" },
+      { "$oid": "580100f4da893943d393e931" }
+    ]
+  },
+  {
+    "genres": ["Action", "Thriller", "Science Fiction", "Mystery", "Adventure"],
+    "tmdbId": "27205",
+    "title": "Inception",
+    "originalTitle": "Inception",
+    "posterPath": "/qmDpIHrmpJINaRKAfWQfftjCdyi.jpg",
+    "overview": "Cobb, a skilled thief who commits corporate espionage by infiltrating the subconscious of his targets is offered a chance to regain his old life as payment for a task considered to be impossible: \"inception\", the implantation of another person's idea into a target's subconscious.",
+    "releaseDate": "2010-07-15",
+    "year": "2010",
+    "cast": [
+      { "$oid": "580100f4da893943d393e932" },
+      { "$oid": "580100f4da893943d393e933" }
+    ]
+  },
+  {
+    "genres": ["Drama", "Thriller", "Crime"],
+    "tmdbId": "1422",
+    "title": "The Departed",
+    "originalTitle": "The Departed",
+    "posterPath": "/tGLO9zw5ZtCeyyEWgbYGgsFxC6i.jpg",
+    "overview": "To take down South Boston's Irish Mafia, the police send in one of their own to infiltrate the underworld, not realizing the syndicate has done likewise. While an undercover cop curries favor with the mob kingpin, a career criminal rises through the police ranks. But both sides soon discover there's a mole among them.",
+    "releaseDate": "2006-10-05",
+    "year": "2006",
+    "cast": [
+      { "$oid": "580100f4da893943d393e932" },
+      { "$oid": "580100f4da893943d393e934" },
+      { "$oid": "580100f4da893943d393e935" }
+    ]
+  }
+]
