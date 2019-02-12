@@ -1,9 +1,10 @@
-import { MoviesService, ActorsService } from '../components'
+import { MoviesService } from '../components'
 
 export default {
   Movie: {
-    cast: movie => {
-      return ActorsService.findByIds(movie.cast)
+    cast: (movie, args, context) => {
+      const { actorsDataLoader } = context
+      return actorsDataLoader.loadMany(movie.cast)
     },
   },
   Query: {
