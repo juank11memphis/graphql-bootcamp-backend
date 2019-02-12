@@ -23,6 +23,7 @@ const typeDefs = `
     getApiVersion: String
     getAllMovies: [Movie]
     getMovieById(movieId: String): Movie
+    getAllActors: [Actor]
   }
 
   enum Genre {

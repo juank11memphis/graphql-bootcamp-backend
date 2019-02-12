@@ -1,4 +1,4 @@
-import { MoviesService } from '../components'
+import { MoviesService, ActorsService } from '../components'
 
 export default {
   Movie: {
@@ -15,6 +15,9 @@ export default {
     getMovieById: (root, args) => {
       const { movieId } = args
       return MoviesService.getMovieById(movieId)
+    },
+    getAllActors: () => {
+      return ActorsService.getAllActors()
     },
   },
   Mutation: {

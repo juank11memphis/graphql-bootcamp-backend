@@ -6,6 +6,10 @@ class ActorsService {
     console.log(ids)
     return Actor.find({ _id: { $in: ids } })
   }
+
+  getAllActors() {
+    return Actor.find({})
+  }
 }
 
 export default new ActorsService()
