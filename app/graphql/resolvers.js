@@ -12,5 +12,9 @@ export default {
     getAllMovies: () => {
       return MoviesService.getAllMovies()
     },
+    getMovieById: (root, args) => {
+      const { movieId } = args
+      return MoviesService.getMovieById(movieId)
+    },
   },
 }

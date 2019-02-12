@@ -22,6 +22,7 @@ const typeDefs = `
   type Query {
     getApiVersion: String
     getAllMovies: [Movie]
+    getMovieById(movieId: String): Movie
   }
 `
 
