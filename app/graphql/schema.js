@@ -24,6 +24,21 @@ const typeDefs = `
     getAllMovies: [Movie]
     getMovieById(movieId: String): Movie
   }
+
+  enum Genre {
+    Thriller
+    Mystery
+    Drama
+  }
+
+  input MovieInput {
+    title: String
+    genres: [Genre]!
+  }
+
+  type Mutation {
+    createMovie(movie: MovieInput): Movie
+  }
 `
 
 const getSchema = () =>

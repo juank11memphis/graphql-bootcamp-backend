@@ -17,4 +17,10 @@ export default {
       return MoviesService.getMovieById(movieId)
     },
   },
+  Mutation: {
+    createMovie: (root, args) => {
+      const { movie } = args
+      return MoviesService.createMovie(movie)
+    },
+  },
 }

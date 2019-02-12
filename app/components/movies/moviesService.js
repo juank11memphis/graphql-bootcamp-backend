@@ -10,6 +10,11 @@ class MoviesService {
   getMovieById(movieId) {
     return Movie.findById(movieId)
   }
+
+  createMovie(movie) {
+    const newMovie = new Movie(movie)
+    return newMovie.save()
+  }
 }
 
 export default new MoviesService()
