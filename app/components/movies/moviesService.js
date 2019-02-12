@@ -1,8 +1,12 @@
 import Movie from './movie'
+import '../actors/actor'
 
 class MoviesService {
-  getAllMovies() {
-    return Movie.find({})
+  async getAllMovies() {
+    const movies = await Movie.find({}).populate('cast')
+    console.log('---------------------movies')
+    console.log(movies)
+    return movies
   }
 }
 
