@@ -1,6 +1,11 @@
-import { MoviesService } from '../components'
+import { MoviesService, ActorsService } from '../components'
 
 export default {
+  Movie: {
+    cast: movie => {
+      return ActorsService.findByIds(movie.cast)
+    },
+  },
   Query: {
     getApiVersion: () => require('../../package.json').version,
     getAllMovies: () => {

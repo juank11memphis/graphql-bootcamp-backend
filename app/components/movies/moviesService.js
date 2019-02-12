@@ -3,9 +3,7 @@ import '../actors/actor'
 
 class MoviesService {
   async getAllMovies() {
-    const movies = await Movie.find({}).populate('cast')
-    console.log('---------------------movies')
-    console.log(movies)
+    const movies = await Movie.find({})
     return movies
   }
 }
