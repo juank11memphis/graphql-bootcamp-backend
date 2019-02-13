@@ -35,6 +35,7 @@ const typeDefs = `
   input MovieInput {
     title: String
     genres: [Genre]!
+    cast: [String]
   }
 
   type Mutation {
