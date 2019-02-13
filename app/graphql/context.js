@@ -18,8 +18,12 @@ const getActorsDataLoader = () => {
   })
 }
 
-const getContext = () => {
+const getContext = contextData => {
+  const { req } = contextData
+  const { headers } = req
+  const { authorization } = headers
   return {
+    token: authorization,
     actorsDataLoader: getActorsDataLoader(),
   }
 }

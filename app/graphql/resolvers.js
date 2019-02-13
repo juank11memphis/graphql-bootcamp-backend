@@ -21,8 +21,12 @@ export default {
     },
   },
   Mutation: {
-    createMovie: (root, args) => {
+    createMovie: (root, args, context) => {
       const { movie } = args
+      const { token } = context
+      if (!token) {
+        throw new Error('Unauthorized')
+      }
       return MoviesService.createMovie(movie)
     },
   },
