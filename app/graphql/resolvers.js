@@ -1,3 +1,5 @@
+import { AuthenticationError } from 'apollo-server-express'
+
 import { MoviesService, ActorsService } from '../components'
 
 export default {
@@ -25,7 +27,7 @@ export default {
       const { movie } = args
       const { token } = context
       if (!token) {
-        throw new Error('Unauthorized')
+        throw new AuthenticationError('Unauthorized')
       }
       return MoviesService.createMovie(movie)
     },
