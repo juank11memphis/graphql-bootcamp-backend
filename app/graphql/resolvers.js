@@ -5,7 +5,10 @@ import { MoviesService, ActorsService } from '../components'
 export default {
   Movie: {
     cast: (movie, args, context) => {
-      const { actorsDataLoader } = context
+      const { actorsDataLoader, token } = context
+      if (!token) {
+        return []
+      }
       return actorsDataLoader.loadMany(movie.cast)
     },
   },
