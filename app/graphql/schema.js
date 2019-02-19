@@ -41,6 +41,10 @@ const typeDefs = `
   type Mutation {
     createMovie(movie: MovieInput): Movie
   }
+
+  type Subscription {
+    movieAdded: Movie
+  }
 `
 
 const getSchema = () =>

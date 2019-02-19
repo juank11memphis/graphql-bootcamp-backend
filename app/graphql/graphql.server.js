@@ -14,6 +14,9 @@ const isProd = false
 const graphServer = new ApolloServer({
   schema,
   context,
+  subscriptions: {
+    onConnect: () => console.log('Connected to websocket'),
+  },
   formatError: error => {
     const { message, extensions = {} } = error
     const { code, exception } = extensions

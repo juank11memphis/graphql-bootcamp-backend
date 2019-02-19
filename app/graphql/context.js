@@ -1,4 +1,8 @@
 import DataLoader from 'dataloader'
+import { PubSub } from 'apollo-server-express'
+import { get } from 'lodash'
+
+const pubsub = new PubSub()
 
 import { ActorsService } from '../components'
 
@@ -20,11 +24,11 @@ const getActorsDataLoader = () => {
 
 const getContext = contextData => {
   const { req } = contextData
-  const { headers } = req
-  const { authorization } = headers
+  const authorization = get(req, 'headers.authorization')
   return {
     token: authorization,
     actorsDataLoader: getActorsDataLoader(),
+    pubsub,
   }
 }
 

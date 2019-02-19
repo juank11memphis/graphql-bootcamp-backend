@@ -2,6 +2,8 @@ import { AuthenticationError } from 'apollo-server-express'
 
 import { MoviesService, ActorsService } from '../components'
 
+const MOVIE_ADDED_SUBSCRIPTION = 'MOVIE_ADDED'
+
 export default {
   Movie: {
     cast: (movie, args, context) => {
@@ -26,13 +28,23 @@ export default {
     },
   },
   Mutation: {
-    createMovie: (root, args, context) => {
+    createMovie: async (root, args, context) => {
       const { movie } = args
-      const { token } = context
+      const { token, pubsub } = context
       if (!token) {
         throw new AuthenticationError('Unauthorized')
       }
-      return MoviesService.createMovie(movie)
+      const newMovie = await MoviesService.createMovie(movie)
+      pubsub.publish(MOVIE_ADDED_SUBSCRIPTION, { movieAdded: newMovie })
+      return newMovie
+    },
+  },
+  Subscription: {
+    movieAdded: {
+      subscribe: (root, args, context) => {
+        const { pubsub } = context
+        return pubsub.asyncIterator([MOVIE_ADDED_SUBSCRIPTION])
+      },
     },
   },
 }
