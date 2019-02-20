@@ -1,8 +1,9 @@
-import { AuthenticationError } from 'apollo-server-express'
+import { AuthenticationError, withFilter } from 'apollo-server-express'
 
 import { MoviesService, ActorsService } from '../components'
 
 const MOVIE_ADDED_SUBSCRIPTION = 'MOVIE_ADDED'
+const MOVIE_UPDATED_SUBSCRIPTION = 'MOVIE_UPDATED'
 
 export default {
   Movie: {
@@ -38,6 +39,16 @@ export default {
       pubsub.publish(MOVIE_ADDED_SUBSCRIPTION, { movieAdded: newMovie })
       return newMovie
     },
+    updateMovie: async (root, args, context) => {
+      const { movieId, data } = args
+      const { token, pubsub } = context
+      if (!token) {
+        throw new AuthenticationError('Unauthorized')
+      }
+      const movieUpdated = await MoviesService.updateMovie(movieId, data)
+      pubsub.publish(MOVIE_UPDATED_SUBSCRIPTION, { movieUpdated })
+      return movieUpdated
+    },
   },
   Subscription: {
     movieAdded: {
@@ -45,6 +56,16 @@ export default {
         const { pubsub } = context
         return pubsub.asyncIterator([MOVIE_ADDED_SUBSCRIPTION])
       },
+    },
+    movieUpdated: {
+      subscribe: withFilter(
+        (root, args, context) => {
+          const { pubsub } = context
+          return pubsub.asyncIterator([MOVIE_UPDATED_SUBSCRIPTION])
+        },
+        (payload, variables) =>
+          payload.movieUpdated._id.toString() === variables.id,
+      ),
     },
   },
 }

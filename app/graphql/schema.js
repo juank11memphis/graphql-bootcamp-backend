@@ -40,10 +40,12 @@ const typeDefs = `
 
   type Mutation {
     createMovie(movie: MovieInput): Movie
+    updateMovie(movieId: String, data: MovieInput): Movie
   }
 
   type Subscription {
     movieAdded: Movie
+    movieUpdated(id: String!): Movie
   }
 `
 
