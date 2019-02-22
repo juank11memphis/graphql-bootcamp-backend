@@ -53,7 +53,9 @@ export default {
   Subscription: {
     movieAdded: {
       subscribe: (root, args, context) => {
-        const { pubsub } = context
+        const { pubsub, currentUser } = context
+        console.log('---------------------movieAdded subscription added')
+        console.log(currentUser)
         return pubsub.asyncIterator([MOVIE_ADDED_SUBSCRIPTION])
       },
     },

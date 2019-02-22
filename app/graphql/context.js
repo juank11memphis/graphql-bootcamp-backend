@@ -23,12 +23,21 @@ const getActorsDataLoader = () => {
 }
 
 const getContext = contextData => {
-  const { req } = contextData
-  const authorization = get(req, 'headers.authorization')
-  return {
-    token: authorization,
+  const { req, connection } = contextData
+  const baseContext = {
     actorsDataLoader: getActorsDataLoader(),
     pubsub,
+  }
+  if (connection) {
+    return {
+      ...baseContext,
+      ...connection.context,
+    }
+  }
+  const authorization = get(req, 'headers.authorization')
+  return {
+    ...baseContext,
+    token: authorization,
   }
 }
 
